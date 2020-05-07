@@ -15,9 +15,4 @@ class MainController extends Controller
         dd($rows[0]->data());
 //
     }
-
-    function firestoreCollection($collection_name): Firestore
-    {
-        return app('firebase.firestore')->database()->collection($collection_name);
-    }
 }
